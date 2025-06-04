@@ -121,7 +121,7 @@
       <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="_03_메일_발송" sap:VirtualizedContainerService.HintSize="929.2,893.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="_03_메일_발송" sap:VirtualizedContainerService.HintSize="934.4000000000001,722.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ss:SecureString" Name="sstrPw" />
       <Variable x:TypeArguments="x:String" Name="strId" />
@@ -132,15 +132,15 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="첨부파일 포함 전송&#xA;&#xA;minasong621@gmail.com" DisplayName="_02_IMAP_메일_발신" sap:VirtualizedContainerService.HintSize="547.2,870.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence sap2010:Annotation.AnnotationText="첨부파일 포함 전송&#xA;&#xA;minasong621@gmail.com" DisplayName="_02_IMAP_메일_발신" sap:VirtualizedContainerService.HintSize="483.2,597.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:GetRobotCredential AssetName="Gmail" CacheStrategy="None" DisplayName="Get Credential" FolderPath="xzerokim@gmail.com's workspace" sap:VirtualizedContainerService.HintSize="513.6,175.2" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[sstrPw]" TimeoutMS="{x:Null}" Username="[strId]" />
-      <Sequence DisplayName="Mail Body 가공 (HTML) | Sequence" sap:VirtualizedContainerService.HintSize="513.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_21">
+      <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Gmail" CacheStrategy="None" DisplayName="Get Credential" FolderPath="xzerokim@gmail.com's workspace" sap:VirtualizedContainerService.HintSize="449.6,175.2" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[sstrPw]" Username="[strId]" />
+      <Sequence DisplayName="Mail Body 가공 (HTML) | Sequence" sap:VirtualizedContainerService.HintSize="449.6,56.8" sap2010:WorkflowViewState.IdRef="Sequence_21">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -169,7 +169,7 @@
             </scg:List>
           </ui:MultipleAssign.AssignOperations>
         </ui:MultipleAssign>
-        <Assign sap2010:Annotation.AnnotationText="&quot;&lt;p&gt;&lt;span style=&quot;&quot;font-family: &amp;quot;Malgun Gothic&amp;quot;; font-size: 12pt;&quot;&quot;&gt;안녕하세요.&lt;/span&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;span style=&quot;&quot;font-family: &amp;quot;Malgun Gothic&amp;quot;; font-size: 12pt;&quot;&quot;&gt;월별세출집행액 내역 송부드립니다..&lt;/span&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;span style=&quot;&quot;font-family: &amp;quot;Malgun Gothic&amp;quot;; font-size: 12pt;&quot;&quot;&gt;해당월집행액이 0원인 데이터는 아래와 같으니 참고 부탁드립니다.&lt;/span&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;span style=&quot;&quot;font-family: &amp;quot;Malgun Gothic&amp;quot;; font-size: 12pt;&quot;&quot;&gt;감사합니다.&lt;/span&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;span style=&quot;&quot;font-family: &amp;quot;Malgun Gothic&amp;quot;; font-size: 12pt;&quot;&quot;&gt;{0}&lt;/span&gt;&lt;/p&gt;&quot;&#xD;&#xA;" sap:VirtualizedContainerService.HintSize="480,308.8" sap2010:WorkflowViewState.IdRef="Assign_4">
+        <Assign sap2010:Annotation.AnnotationText="&quot;&lt;p&gt;&lt;span style=&quot;&quot;font-family: &amp;quot;Malgun Gothic&amp;quot;; font-size: 12pt;&quot;&quot;&gt;안녕하세요.&lt;/span&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;span style=&quot;&quot;font-family: &amp;quot;Malgun Gothic&amp;quot;; font-size: 12pt;&quot;&quot;&gt;월별세출집행액 내역 송부드립니다..&lt;/span&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;span style=&quot;&quot;font-family: &amp;quot;Malgun Gothic&amp;quot;; font-size: 12pt;&quot;&quot;&gt;해당월집행액이 0원인 데이터는 아래와 같으니 참고 부탁드립니다.&lt;/span&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;span style=&quot;&quot;font-family: &amp;quot;Malgun Gothic&amp;quot;; font-size: 12pt;&quot;&quot;&gt;감사합니다.&lt;/span&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;span style=&quot;&quot;font-family: &amp;quot;Malgun Gothic&amp;quot;; font-size: 12pt;&quot;&quot;&gt;{0}&lt;/span&gt;&lt;/p&gt;&quot;&#xA;" sap:VirtualizedContainerService.HintSize="480,308.8" sap2010:WorkflowViewState.IdRef="Assign_4">
           <Assign.To>
             <OutArgument x:TypeArguments="x:Object">[in_Config("SendMailBody")]</OutArgument>
           </Assign.To>
@@ -183,14 +183,15 @@
           </sap:WorkflowViewStateService.ViewState>
         </Assign>
       </Sequence>
-      <Sequence DisplayName="메일 발송 | Sequence" sap:VirtualizedContainerService.HintSize="513.6,495.2" sap2010:WorkflowViewState.IdRef="Sequence_14">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="449.6,174.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;** Send Mail... **&quot;]" />
+      <Sequence DisplayName="메일 발송 | Sequence" sap:VirtualizedContainerService.HintSize="449.6,48" sap2010:WorkflowViewState.IdRef="Sequence_14">
         <Sequence.Variables>
           <Variable x:TypeArguments="x:String" Name="strOutputPath" />
           <Variable x:TypeArguments="x:String" Name="strSubject" />
         </Sequence.Variables>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
