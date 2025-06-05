@@ -12,7 +12,7 @@
 .tmh/
 
 # ⚙️ 프로젝트 및 사용자 설정
-.project.json
+project.json
 *.local.json
 .project.settings.json
 .settings.json
