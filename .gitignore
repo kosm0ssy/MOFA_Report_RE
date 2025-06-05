@@ -1,0 +1,72 @@
+# === UiPath 프로젝트 불필요 파일/폴더 무시 ===
+
+# 🔒 숨김 폴더 (점으로 시작)
+.entities/
+.local/
+.objects/
+.project/
+.screenshots/
+.settings/
+.storage/
+.templates/
+.tmh/
+
+# ⚙️ 프로젝트 및 사용자 설정
+project.json
+*.local.json
+.project.settings.json
+.settings.json
+*.template.json
+*.screenshots/
+
+# 📦 빌드 및 배포 폴더
+Output/
+publish/
+Packages/
+TestResults/
+
+# 🧪 테스트 결과 및 캐시
+*.log
+*.tmp
+*.bak
+*.swp
+*.user
+*.suo
+
+# 🔐 민감 정보
+config.xlsx
+credentials.xlsx
+*.secrets.json
+*.key
+*.pfx
+.env
+
+# ⚙️ IDE/에디터 관련
+.vscode/
+.idea/
+*.sln.docstates
+*.userosscache
+
+# 📁 시스템/운영체제 쓰레기
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# 🧪 Python / Node.js 등 사용 시
+node_modules/
+__pycache__/
+*.py[cod]
+
+# 📂 문서/스크립트 제외 (원한다면)
+Documentation/
+Exceptions_Screenshots/
+
+# 🔒 확장자 무시 (선택적으로 조정 가능)
+*.xlsx
+*.csv
+*.nupkg
+
+# ✅ 추적용 빈 폴더 유지 파일 허용
+!.gitkeep
